@@ -22,7 +22,7 @@ const requireAuth = (req,res,next) => {
 }
 const checkUser = (req,res,next) => {
 
-    const mindiff = 2000;
+    const mindiff = 500;
 
     const token = req.cookies.jwt;
     if(token) {
